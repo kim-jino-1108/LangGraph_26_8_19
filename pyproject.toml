@@ -1,0 +1,37 @@
+[project]
+name = "langgraph-26-8-24"
+version = "0.1.0"
+description = "LangGraph / LangChain study notebooks (Basic, Memory, RAG)"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "langgraph",
+    "langgraph-checkpoint-sqlite",
+    "langchain",
+    "langchain-core",
+    "langchain-community",
+    "langchain-openai",
+    "langchain-google-genai",
+    "langchain-chroma",
+    "langchain-text-splitters",
+    "langchain-tavily",
+    "langchain-classic",
+    "python-dotenv",
+    "pymupdf",
+    "geopy",
+    "gradio",
+    "pydantic",
+    "requests",
+    "tavily-python",
+    "typing-extensions",
+    "ipython",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter",
+    "ipykernel",
+    "nbconvert",
+]
+
+[tool.uv]
+package = false
